@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block navbar %}
+  {# J'écrase la navbar parente en la remplaçant par rien du tout #}
+{% endblock %}
+
+{% block body %}
+  <h1 class="text-8xl my-6 text-center">About</h1>
+  <div>
+    <img src="{{ asset('images/taiwan.jpg') }}" alt="Taïwan is beautiful" style="max-width: 100%;" />
+  </div>
+{% endblock %}

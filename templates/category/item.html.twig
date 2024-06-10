@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Tous les articles sur {{ category.name }}
+{% endblock %}
+
+{% block body %}
+  <h1 class="text-4xl text-center">{{ category.name }}</h1>
+
+  {% for article in category.articles %}
+    <p>{{ article.title }}</p>
+  {% else %}
+    <p>Aucun article trouvé pour cette catégorie.</p>
+  {% endfor %}
+{% endblock %}

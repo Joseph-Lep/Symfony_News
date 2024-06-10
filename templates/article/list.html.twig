@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Tous les articles
+{% endblock %}
+
+{% block body %}
+  <h1 class="text-4xl text-center">Tous les articles</h1>
+
+  {% for article in articles %}
+    <p>{{ article.title }} ({{ article.createdAt|date('d/m/Y') }})</p>
+  {% endfor %}
+{% endblock %}

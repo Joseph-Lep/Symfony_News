@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+  Inscription à la newsletter
+{% endblock %}
+
+{% block body %}
+  <h1 class="text-4xl text-center">Inscription à la newsletter</h1>
+
+  <div class="w-full px-4 sm:w-1/2 lg:w-1/3 mx-auto">{{ form(newsletterForm) }}</div>
+{% endblock %}
